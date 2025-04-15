@@ -3,10 +3,12 @@ import { MapPin } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Pagination, PaginationContent, PaginationItem, PaginationLink } from "@/components/ui/pagination";
+import Navbar from '../components/Navbar';
 
 const Discover = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <Navbar />
       {/* Banner Header */}
       <div 
         className="relative h-[200px] w-full overflow-hidden"
