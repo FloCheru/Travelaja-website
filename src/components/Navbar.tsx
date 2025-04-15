@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 
 const Navbar = () => {
@@ -10,15 +11,15 @@ const Navbar = () => {
     <nav className="absolute top-0 left-0 w-full z-50 py-6 px-4 md:px-12">
       <div className="container-custom flex justify-between items-center">
         <div className="flex items-center">
-          <a href="/" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <span className="text-2xl font-bold text-white font-display">travelaja</span>
-          </a>
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#" className="font-medium text-white hover:text-white/80 transition-colors">Home</a>
-          <a href="#" className="font-medium text-white hover:text-white/80 transition-colors">Discover</a>
+          <Link to="/" className="font-medium text-white hover:text-white/80 transition-colors">Home</Link>
+          <Link to="/discover" className="font-medium text-white hover:text-white/80 transition-colors">Discover</Link>
           <a href="#" className="font-medium text-white hover:text-white/80 transition-colors">Services</a>
           <a href="#" className="font-medium text-white hover:text-white/80 transition-colors">News</a>
           <a href="#" className="font-medium text-white hover:text-white/80 transition-colors">About Us</a>
@@ -54,8 +55,8 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white/90 py-4 px-6 shadow-lg absolute w-full">
           <div className="flex flex-col space-y-4">
-            <a href="#" className="font-medium hover:text-primary transition-colors">Home</a>
-            <a href="#" className="font-medium hover:text-primary transition-colors">Discover</a>
+            <Link to="/" className="font-medium hover:text-primary transition-colors">Home</Link>
+            <Link to="/discover" className="font-medium hover:text-primary transition-colors">Discover</Link>
             <a href="#" className="font-medium hover:text-primary transition-colors">Services</a>
             <a href="#" className="font-medium hover:text-primary transition-colors">News</a>
             <a href="#" className="font-medium hover:text-primary transition-colors">About Us</a>
