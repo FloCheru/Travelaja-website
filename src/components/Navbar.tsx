@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-8">
           <Link to="/" className="font-medium text-white hover:text-white/80 transition-colors">Home</Link>
           <Link to="/discover" className="font-medium text-white hover:text-white/80 transition-colors">Discover</Link>
-          <Link to="#" className="font-medium text-white hover:text-white/80 transition-colors">Services</Link>
+          <Link to="/services" className="font-medium text-white hover:text-white/80 transition-colors">Services</Link>
           <Link to="#" className="font-medium text-white hover:text-white/80 transition-colors">News</Link>
           <Link to="#" className="font-medium text-white hover:text-white/80 transition-colors">About Us</Link>
           <Link to="#" className="font-medium text-white hover:text-white/80 transition-colors">Contact</Link>
@@ -57,7 +57,7 @@ const Navbar = () => {
           <div className="flex flex-col space-y-4">
             <Link to="/" className="font-medium hover:text-primary transition-colors">Home</Link>
             <Link to="/discover" className="font-medium hover:text-primary transition-colors">Discover</Link>
-            <Link to="#" className="font-medium hover:text-primary transition-colors">Services</Link>
+            <Link to="/services" className="font-medium hover:text-primary transition-colors">Services</Link>
             <Link to="#" className="font-medium hover:text-primary transition-colors">News</Link>
             <Link to="#" className="font-medium hover:text-primary transition-colors">About Us</Link>
             <Link to="#" className="font-medium hover:text-primary transition-colors">Contact</Link>
