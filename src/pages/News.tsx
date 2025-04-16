@@ -1,13 +1,11 @@
-
 import Navbar from "../components/Navbar";
 import { CalendarIcon } from "lucide-react";
-import Footer from "../components/Footer";
 
 const News = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      
+
       {/* Hero Banner */}
       <div className="relative h-[300px] w-full">
         <div
@@ -20,7 +18,9 @@ const News = () => {
           <div className="absolute inset-0 bg-black/30"></div>
         </div>
         <div className="absolute inset-0 flex items-center justify-start px-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-white">Our News</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white">
+            Our News
+          </h1>
         </div>
       </div>
 
@@ -28,7 +28,10 @@ const News = () => {
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold mb-2">Travelaja Articles</h2>
-          <p className="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+          <p className="text-gray-600">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod.
+          </p>
         </div>
 
         {/* Filter Buttons */}
@@ -57,7 +60,9 @@ const News = () => {
               className="w-full h-52 object-cover"
             />
             <div className="p-5">
-              <h3 className="font-bold text-lg mb-2">Dream Vacations: 10 Amazing countries that an open right now</h3>
+              <h3 className="font-bold text-lg mb-2">
+                Dream Vacations: 10 Amazing countries that an open right now
+              </h3>
               <div className="flex items-center text-gray-500 text-sm">
                 <CalendarIcon size={14} className="mr-1" />
                 <span>September 15, 2023</span>
@@ -73,7 +78,9 @@ const News = () => {
               className="w-full h-52 object-cover"
             />
             <div className="p-5">
-              <h3 className="font-bold text-lg mb-2">Wild idea: New 3D destination's created around the world</h3>
+              <h3 className="font-bold text-lg mb-2">
+                Wild idea: New 3D destination's created around the world
+              </h3>
               <div className="flex items-center text-gray-500 text-sm">
                 <CalendarIcon size={14} className="mr-1" />
                 <span>September 10, 2023</span>
@@ -89,7 +96,9 @@ const News = () => {
               className="w-full h-52 object-cover"
             />
             <div className="p-5">
-              <h3 className="font-bold text-lg mb-2">15 Picturesque Destinations you should visit in Europe this year</h3>
+              <h3 className="font-bold text-lg mb-2">
+                15 Picturesque Destinations you should visit in Europe this year
+              </h3>
               <div className="flex items-center text-gray-500 text-sm">
                 <CalendarIcon size={14} className="mr-1" />
                 <span>September 8, 2023</span>
@@ -105,7 +114,9 @@ const News = () => {
               className="w-full h-52 object-cover"
             />
             <div className="p-5">
-              <h3 className="font-bold text-lg mb-2">5 Destinations that you must visit while in Indonesia</h3>
+              <h3 className="font-bold text-lg mb-2">
+                5 Destinations that you must visit while in Indonesia
+              </h3>
               <div className="flex items-center text-gray-500 text-sm">
                 <CalendarIcon size={14} className="mr-1" />
                 <span>September 5, 2023</span>
@@ -121,7 +132,9 @@ const News = () => {
               className="w-full h-52 object-cover"
             />
             <div className="p-5">
-              <h3 className="font-bold text-lg mb-2">The most interesting historical monuments in Indonesia</h3>
+              <h3 className="font-bold text-lg mb-2">
+                The most interesting historical monuments in Indonesia
+              </h3>
               <div className="flex items-center text-gray-500 text-sm">
                 <CalendarIcon size={14} className="mr-1" />
                 <span>September 3, 2023</span>
@@ -137,7 +150,9 @@ const News = () => {
               className="w-full h-52 object-cover"
             />
             <div className="p-5">
-              <h3 className="font-bold text-lg mb-2">Those looking before missing the discount</h3>
+              <h3 className="font-bold text-lg mb-2">
+                Those looking before missing the discount
+              </h3>
               <div className="flex items-center text-gray-500 text-sm">
                 <CalendarIcon size={14} className="mr-1" />
                 <span>September 1, 2023</span>
@@ -153,7 +168,9 @@ const News = () => {
               className="w-full h-52 object-cover"
             />
             <div className="p-5">
-              <h3 className="font-bold text-lg mb-2">10 European Destinations you should visit in the past</h3>
+              <h3 className="font-bold text-lg mb-2">
+                10 European Destinations you should visit in the past
+              </h3>
               <div className="flex items-center text-gray-500 text-sm">
                 <CalendarIcon size={14} className="mr-1" />
                 <span>September 12, 2023</span>
@@ -169,7 +186,9 @@ const News = () => {
               className="w-full h-52 object-cover"
             />
             <div className="p-5">
-              <h3 className="font-bold text-lg mb-2">Travel booking before missing the discount</h3>
+              <h3 className="font-bold text-lg mb-2">
+                Travel booking before missing the discount
+              </h3>
               <div className="flex items-center text-gray-500 text-sm">
                 <CalendarIcon size={14} className="mr-1" />
                 <span>September 10, 2023</span>
@@ -185,7 +204,9 @@ const News = () => {
               className="w-full h-52 object-cover"
             />
             <div className="p-5">
-              <h3 className="font-bold text-lg mb-2">Winter weather: 10 amazing countries that are open right now</h3>
+              <h3 className="font-bold text-lg mb-2">
+                Winter weather: 10 amazing countries that are open right now
+              </h3>
               <div className="flex items-center text-gray-500 text-sm">
                 <CalendarIcon size={14} className="mr-1" />
                 <span>September 5, 2023</span>
@@ -194,8 +215,6 @@ const News = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

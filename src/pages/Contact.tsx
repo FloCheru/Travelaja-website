@@ -1,14 +1,17 @@
-
 import { Mail, MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Form, FormControl, FormField, FormItem, FormLabel } from "@/components/ui/form";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+} from "@/components/ui/form";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -45,15 +48,13 @@ const Contact = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <Navbar />
-      
       {/* Hero Banner */}
       <div className="relative h-64 w-full bg-gray-700">
         <div className="absolute inset-0 bg-black/40"></div>
-        <img 
-          src="/lovable-uploads/cf33956a-fc58-4800-95f0-0d92f66fa6eb.png" 
-          alt="Contact Us" 
-          className="w-full h-full object-cover" 
+        <img
+          src="/lovable-uploads/cf33956a-fc58-4800-95f0-0d92f66fa6eb.png"
+          alt="Contact Us"
+          className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 flex items-center justify-start px-12">
           <h1 className="text-4xl font-bold text-white">Contact Us</h1>
@@ -66,7 +67,10 @@ const Contact = () => {
         <div>
           <h2 className="text-2xl font-semibold mb-4">Get in touch</h2>
           <p className="text-gray-600 mb-6">
-            Fill out the form below with details of your program, question, or booking request. We'll reply straight away, and we can call you back if you'd like! Our telephone lines are open Monday-Friday 9am-5pm (GMT+1).
+            Fill out the form below with details of your program, question, or
+            booking request. We'll reply straight away, and we can call you back
+            if you'd like! Our telephone lines are open Monday-Friday 9am-5pm
+            (GMT+1).
           </p>
 
           <Form {...form}>
@@ -83,7 +87,7 @@ const Contact = () => {
                   </FormItem>
                 )}
               />
-              
+
               <FormField
                 control={form.control}
                 name="email"
@@ -117,18 +121,18 @@ const Contact = () => {
                   <FormItem>
                     <FormLabel>Message</FormLabel>
                     <FormControl>
-                      <Textarea 
-                        placeholder="Your message here..." 
+                      <Textarea
+                        placeholder="Your message here..."
                         className="h-32"
-                        {...field} 
+                        {...field}
                       />
                     </FormControl>
                   </FormItem>
                 )}
               />
 
-              <Button 
-                type="submit" 
+              <Button
+                type="submit"
                 className="bg-green-600 hover:bg-green-700 text-white w-full sm:w-auto"
               >
                 Send
@@ -141,13 +145,13 @@ const Contact = () => {
         <div className="space-y-6">
           <div className="h-64 bg-gray-200 rounded">
             {/* Map placeholder - in a real scenario, you'd add a Google Map or similar here */}
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0537060394904!2d106.82676607681268!3d-6.2518656937975185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3bcf94bd44d%3A0x371a32d643d1d967!2sJakarta%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1681548056608!5m2!1sen!2sus" 
-              width="100%" 
-              height="100%" 
-              style={{ border: 0 }} 
-              allowFullScreen 
-              loading="lazy" 
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0537060394904!2d106.82676607681268!3d-6.2518656937975185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3bcf94bd44d%3A0x371a32d643d1d967!2sJakarta%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1681548056608!5m2!1sen!2sus"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="Google Maps"
             ></iframe>
@@ -180,9 +184,7 @@ const Contact = () => {
       </div>
 
       {/* Footer */}
-      <div className="mt-auto">
-        <Footer />
-      </div>
+      <div className="mt-auto"></div>
     </div>
   );
 };
