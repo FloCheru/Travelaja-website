@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
@@ -42,7 +43,7 @@ const Navbar = () => {
           Services
         </Link>
         <Link
-          to="#"
+          to="/news"
           className="font-medium  hover:text-white/80 transition-colors"
         >
           News
@@ -119,7 +120,7 @@ const Navbar = () => {
               Services
             </Link>
             <Link
-              to="#"
+              to="/news"
               className="font-medium hover:text-primary transition-colors"
             >
               News
