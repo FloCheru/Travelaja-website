@@ -55,8 +55,8 @@ const Navbar = () => {
           A propos
         </Link>
         <Link
-          to="#"
-          className="font-medium text-white hover:text-white/80 transition-colors"
+          to="/contact"
+          className="font-medium hover:text-white/80 transition-colors"
         >
           Contact
         </Link>
@@ -132,7 +132,7 @@ const Navbar = () => {
               A propos
             </Link>
             <Link
-              to="#"
+              to="/contact"
               className="font-medium hover:text-primary transition-colors"
             >
               Contact
