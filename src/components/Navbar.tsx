@@ -49,7 +49,7 @@ const Navbar = () => {
           News
         </Link>
         <Link
-          to="#"
+          to="/about"
           className="font-medium  hover:text-white/80 transition-colors"
         >
           A propos
@@ -126,7 +126,7 @@ const Navbar = () => {
               News
             </Link>
             <Link
-              to="#"
+              to="/about"
               className="font-medium hover:text-primary transition-colors"
             >
               A propos
