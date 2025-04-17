@@ -1,20 +1,31 @@
-
-import { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useLocation, Link } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
-import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
-  const isHome = location.pathname === "/";
-  console.log(isHome);
+  const isHomePage = location.pathname === "/";
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Pour ajouter l'écouteur d'événement de scroll sur la home page
+  useEffect(() => {
+    if (!isHomePage) return;
+
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isHomePage]);
 
   return (
     <nav
-      className={`flex justify-between fixed top-0 left-0 w-full z-50 py-6 px-4 md:px-4 lg:px-12 ${
-        isHome ? "bg-transparent text-white" : "bg-white text-black shadow-sm"
+      className={`flex justify-between fixed top-0 left-0 w-full z-50 py-6 px-4 md:px-4 lg:px-12 transition-colors duration-300 ${
+        isHomePage && !scrolled
+          ? "bg-transparent text-white"
+          : "bg-white shadow-md text-black"
       }`}
     >
       <Link to="/" className="flex items-center">
