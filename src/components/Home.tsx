@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const Home = () => {
   return (
-    <div className="relative h-screen w-full overflow-hidden border-solid border-green-600 border-2">
+    <div className="relative h-screen w-full overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0 w-full h-full bg-cover bg-center z-[-1]"

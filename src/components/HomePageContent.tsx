@@ -1,4 +1,10 @@
 import React from "react";
+import amsterdam from "../../public/img/Amsterdam.jpeg";
+import athènes from "../../public/img/Athènes.jpeg";
+import barcelone from "../../public/img/Barcelone.jpeg";
+import lisbonne from "../../public/img/Lisbonne.jpeg";
+import paris from "../../public/img/Paris.jpeg";
+import rome from "../../public/img/Rome.jpeg";
 
 const HomePageContent: React.FC = () => {
   const destinations = [
@@ -6,37 +12,37 @@ const HomePageContent: React.FC = () => {
       title: "Rome, Italie",
       price: "€890",
       duration: "7 jours",
-      image: "/images/rome.jpg",
+      image: rome,
     },
     {
       title: "Barcelone, Espagne",
       price: "€750",
       duration: "5 jours",
-      image: "/images/barcelona.jpg",
+      image: barcelone,
     },
     {
       title: "Paris, France",
       price: "€980",
       duration: "6 jours",
-      image: "/images/paris.jpg",
+      image: paris,
     },
     {
       title: "Amsterdam, Pays-Bas",
       price: "€720",
       duration: "4 jours",
-      image: "/images/amsterdam.jpg",
+      image: amsterdam,
     },
     {
       title: "Lisbonne, Portugal",
       price: "€690",
       duration: "5 jours",
-      image: "/images/lisbon.jpg",
+      image: lisbonne,
     },
     {
       title: "Athènes, Grèce",
       price: "€870",
       duration: "6 jours",
-      image: "/images/athens.jpg",
+      image: athènes,
     },
   ];
 
